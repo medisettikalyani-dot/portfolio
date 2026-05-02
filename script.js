@@ -108,4 +108,19 @@ if (contactForm) {
   });
 }
 
+// VanillaTilt initialization for all cards
+const tiltElements = document.querySelectorAll(
+  ".skills__card, .project, .about__card, .about__highlights, .about__focus, .contact__form, .hero-card, .card"
+);
+
+tiltElements.forEach((element) => {
+  VanillaTilt.init(element, {
+    max: 10,
+    scale: 1.03,
+    speed: 400,
+    transition: true,
+  });
+});
+
+
 

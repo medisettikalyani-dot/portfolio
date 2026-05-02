@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/gh/micku7zu/vanilla-tilt.js@1.8.0/dist/vanilla-tilt.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -429,7 +430,36 @@
         </p>
       </div>
     </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(
+    ".card, .project, .about__card"
+  );
+
+  VanillaTilt.init(elements, {
+    max: 12,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.15,
+    scale: 1.03,
+    perspective: 1000,
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".project, .skills__card");
+
+  VanillaTilt.init(elements, {
+    max: 12,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.15,
+    scale: 1.03,
+  });
+});
+</script>
     <script src="script.js"></script>
   </body>
 </html>

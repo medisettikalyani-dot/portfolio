@@ -456,7 +456,7 @@ textarea {
 .about__main {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 2rem;
 }
 
 .about__card {
@@ -541,7 +541,7 @@ textarea {
 .about__sidebar {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 2rem;
 }
 
 .about__highlights {
@@ -621,7 +621,7 @@ textarea {
 .skills__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.6rem;
+  gap: 2rem;
 }
 
 .card {
